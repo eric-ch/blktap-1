@@ -627,27 +627,6 @@ fail:
 }
 
 
-inline event_id_t
-tapdisk_xenblkif_evtchn_event_id(const struct td_xenblkif *blkif)
-{
-	return blkif->ctx->ring_event;
-}
-
-
-inline event_id_t
-tapdisk_xenblkif_chkrng_event_id(const struct td_xenblkif *blkif)
-{
-	return blkif->chkrng_event;
-}
-
-
-inline event_id_t
-tapdisk_xenblkif_stoppolling_event_id(const struct td_xenblkif *blkif)
-{
-	return blkif->stoppolling_event;
-}
-
-
 int
 tapdisk_xenblkif_ring_stats_update(struct td_xenblkif *blkif)
 {

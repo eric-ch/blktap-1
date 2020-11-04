@@ -32,8 +32,9 @@
 #define __TD_CTX_H__
 
 #include "blktap-xenif.h"
-#include "td-blkif.h"
 #include "scheduler.h"
+
+struct td_xenblkif;
 
 /**
  * A VBD context: groups two or more VBDs of the same tapdisk.
