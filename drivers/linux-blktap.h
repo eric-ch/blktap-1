@@ -137,10 +137,4 @@ struct blktap_sring {
 #define BLKTAP_IOCTL_CREATE_DEVICE_COMPAT 202
 #define BLKTAP_NAME_MAX 256
 
-struct blktap2_params {
-	char               name[BLKTAP_NAME_MAX];
-	unsigned long long capacity;
-	unsigned long      sector_size;
-};
-
 #endif /* _LINUX_BLKTAP_H */
