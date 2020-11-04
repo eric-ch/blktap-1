@@ -544,8 +544,8 @@ tapdisk_xenblkif_complete_request(struct td_xenblkif * const blkif,
     tapdisk_xenblkif_free_request(blkif, tapreq);
 
     blkif->stats.reqs.out++;
-    if (final)
-        blkif->stats.kicks.out++;
+	if (final)
+		blkif->stats.kicks.out++;
 
 	if (unlikely(processing_barrier_message))
 		blkif->barrier.msg = NULL;
