@@ -100,6 +100,11 @@ shm_create(struct shm *shm);
 int
 shm_destroy(struct shm *shm);
 
-inline long long timeval_to_us(struct timeval *tv);
+static const long long USEC_PER_SEC = 1000000L;
+
+static inline long long timeval_to_us(struct timeval *tv)
+{
+	return ((long long)tv->tv_sec * USEC_PER_SEC) + tv->tv_usec;
+}
 
 #endif
