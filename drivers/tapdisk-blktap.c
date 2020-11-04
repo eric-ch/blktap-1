@@ -44,7 +44,6 @@
 #include <sys/sysmacros.h>
 #include <sys/stat.h>
 
-#include "blktap.h"
 #include "tapdisk-vbd.h"
 #include "tapdisk-blktap.h"
 #include "tapdisk-metrics.h"

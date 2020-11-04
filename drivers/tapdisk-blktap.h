@@ -34,7 +34,7 @@
 typedef struct td_blktap td_blktap_t;
 typedef struct td_blktap_req td_blktap_req_t;
 
-#include "blktap.h"
+#include "blktap2.h"
 #include "tapdisk-vbd.h"
 #include "list.h"
 #include "tapdisk-metrics.h"

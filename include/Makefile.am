@@ -20,5 +20,4 @@ blktap_HEADERS += debug.h
 blktap_HEADERS += util.h
 blktap_HEADERS += ../drivers/tapdisk-metrics-stats.h
 
-noinst_HEADERS  = blktap.h
 noinst_HEADERS += compiler.h
